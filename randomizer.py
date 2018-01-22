@@ -1,4 +1,4 @@
-"""Random picker thaat may be used in classes made for my bio class."""
+"""Random picker that may be modified for use in classes made for my bio class."""
 import random
 
 
