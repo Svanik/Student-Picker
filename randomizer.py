@@ -11,17 +11,21 @@ def pickonestudent():
 def pickxstudents():
     """Pick x studnet when called."""
     numofstud = input("Enter Num of Students to Pick: ")
-    if numofstud.isnumeric():
-        numofstud = int(numofstud)
-        choicenum = 1
-        while choicenum < (numofstud + 1):
-            pick = random.choice(students)
-            students.remove(pick)
-            pickedstudents.append(pick)
-            print(f'#{choicenum} {pick}')
-            choicenum = choicenum + 1
+    if numofstud <= len(students) and numofstud > 0:
+        if numofstud.isnumeric():
+            numofstud = int(numofstud)
+            choicenum = 1
+            while choicenum < (numofstud + 1):
+                pick = random.choice(students)
+                students.remove(pick)
+                pickedstudents.append(pick)
+                print(f'#{choicenum} {pick}')
+                choicenum = choicenum + 1
+        else:
+            print("You did not enter a number try again. ")
+            pickxstudents()
     else:
-        print("You did not enter a number try again. ")
+        print("The number you entered is too large ")
         pickxstudents()
 
 
