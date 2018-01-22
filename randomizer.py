@@ -71,38 +71,22 @@ def pickthistodo():
         pickthistodo()
 
 
-students = ["Halle Conaghan", 'Svanik Dani', 'Daniella Donohue',
-            'Christian Fusco', 'Marilise DeBuck', 'Lennox Lamar',
-            'Christopher Mayo', 'Jacob Naddelman', 'Isabel Piantini',
-            'Youcef Soltani', 'Rebeca Vargas', 'Tyler Wasilewski']
-pickedstudents = []
-
 x = 1
 while x == 1:
+    students = ["Halle Conaghan", 'Svanik Dani', 'Daniella Donohue',
+                'Christian Fusco', 'Marilise DeBuck', 'Lennox Lamar',
+                'Christopher Mayo', 'Jacob Naddelman', 'Isabel Piantini',
+                'Youcef Soltani', 'Rebeca Vargas', 'Tyler Wasilewski']
+    pickedstudents = []
+
     donow = pickthistodo()
     if donow == 1:
         pickonestudent()
-        students = ["Halle Conaghan", 'Svanik Dani', 'Daniella Donohue',
-                    'Christian Fusco', 'Marilise DeBuck', 'Lennox Lamar',
-                    'Christopher Mayo', 'Jacob Naddelman', 'Isabel Piantini',
-                    'Youcef Soltani', 'Rebeca Vargas', 'Tyler Wasilewski']
-        pickedstudents = []
         x = goagain()
     elif donow == 2:
         pickxstudents()
-        students = ["Halle Conaghan", 'Svanik Dani', 'Daniella Donohue',
-                    'Christian Fusco', 'Marilise DeBuck', 'Lennox Lamar',
-                    'Christopher Mayo', 'Jacob Naddelman', 'Isabel Piantini',
-                    'Youcef Soltani', 'Rebeca Vargas', 'Tyler Wasilewski']
-        pickedstudents = []
         x = goagain()
     elif donow == 3:
-        pickallstudents()
-        students = ["Halle Conaghan", 'Svanik Dani', 'Daniella Donohue',
-                    'Christian Fusco', 'Marilise DeBuck', 'Lennox Lamar',
-                    'Christopher Mayo', 'Jacob Naddelman', 'Isabel Piantini',
-                    'Youcef Soltani', 'Rebeca Vargas', 'Tyler Wasilewski']
-        pickedstudents = []
         x = goagain()
     else:
         x = 1
