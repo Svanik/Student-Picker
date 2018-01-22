@@ -87,6 +87,7 @@ while x == 1:
         pickxstudents()
         x = goagain()
     elif donow == 3:
+        pickallstudents
         x = goagain()
     else:
         x = 1
