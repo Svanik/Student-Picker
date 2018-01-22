@@ -3,11 +3,13 @@ import random
 
 
 def pickonestudent():
+    """Pick one studnet when called."""
     pick = random.choice(students)
     print(pick)
 
 
 def pickxstudents():
+    """Pick x studnet when called."""
     numofstud = input("Enter Num of Students to Pick: ")
     if numofstud.isnumeric():
         numofstud = int(numofstud)
@@ -24,6 +26,7 @@ def pickxstudents():
 
 
 def pickallstudents():
+    """Pick all studnets one at a time when called."""
     studlen = len(students)
     choicenum = 1
     while choicenum < (studlen + 1):
@@ -35,6 +38,7 @@ def pickallstudents():
 
 
 def goagain():
+    """Pick wheter to go again."""
     while True:
         goagain = input("Would you like to pick again. (y/n)")
         if goagain == 'y' or goagain == 'Y':
@@ -49,9 +53,10 @@ def goagain():
 
 
 def pickthistodo():
+    """Pick what needs to be done next."""
     dothis = input('''Please enter the number that correseponds with the option
                     1) Pick 1 students
-                    2) Pick 3x students
+                    2) Pick a given number of students
                     3) Pick all studnets
                     Enter Choice: ''')
     if dothis == '1' or dothis == '2' or dothis == '3':
