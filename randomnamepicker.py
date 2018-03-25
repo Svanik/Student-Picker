@@ -73,10 +73,10 @@ def pickthistodo():
 
 x = 1
 while x == 1:
-    students = ["Halle Conaghan", 'Svanik Dani', 'Daniella Donohue',
-                'Christian Fusco', 'Marilise DeBuck', 'Lennox Lamar',
-                'Christopher Mayo', 'Jacob Naddelman', 'Isabel Piantini',
-                'Youcef Soltani', 'Rebeca Vargas', 'Tyler Wasilewski']
+    students = ["Kishan", 'Svanik', 'Luke',
+                'Gabe', 'Sanketh', 'Jagmohan',
+                'Clara', 'Amy', 'Neha',
+                'Ben', 'Kaya', 'Melissa', 'Sayli']
     pickedstudents = []
 
     donow = pickthistodo()
