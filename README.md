@@ -5,3 +5,6 @@ Random Name Picker - By: Svanik Dani
 
   To edit:
   Change the list named students to contatin whatever items you want to pick from.
+  
+  Made for my biology teacher and used in class.
+  
